@@ -59,6 +59,9 @@
 		    $('#fadeout').click(function(){
 		    	$('#toggle_dog').fadeOut("slow");
 		    });
+		    $('#focus').focus(function(){
+		    	alert("YOU ARE SO FOCUSED!!")
+		    });
 		});
 	</script>
 	<title>My Basic Jquery Assignment</title>
@@ -110,7 +113,7 @@
 			<button class="block btn" id="val">Change the alt now!</button>
 		</div><!--  end of val section -->
 		<div class="section fixed_height">
-			<h1>Toggle, Hide, Show, Slide</h1>
+			<h1>Toggle, Hide, Show, Slide, Fade</h1>
 			<ul class=" block inline">
 				<li><button id="toggle" class="btn">TOGGLE</button></li>
 				<li><button id="hide" class="btn">Hide</button></li>
@@ -120,10 +123,14 @@
 				<li><button id="slide_toggle" class="btn">Slide toggle</button></li>
 				<li><button id="fadein" class="btn">Fade In</button></li>
 				<li><button id="fadeout" class="btn">Fade Out</button></li>
-
 			</ul>
 			<img id="toggle_dog" src="img/labradoodle.jpg">
-		</div><!-- end of toggle() sectin -->
+		</div><!-- end of toggle,hide,show,slide,fade sectin -->
+		<div class="section">
+			<h1>Focus</h1>
+			<p>Clcik into the text field to change focus</p>
+			<input type="textarea" placeholder="click here!!" id="focus">
+		</div><!-- end of focus -->
 	</div><!-- end of container -->
 
 </body>
