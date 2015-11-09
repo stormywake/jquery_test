@@ -38,6 +38,12 @@
 		    $('#toggle').click(function(){
 		    	$('#toggle_dog').toggle("slow");
 		    });
+		    $('#hide').click(function(){
+		    	$('#toggle_dog').hide();
+		    });
+		    $('#show').click(function(){
+		    	$('#toggle_dog').show();
+		    });
 		});
 	</script>
 	<title>My Basic Jquery Assignment</title>
@@ -89,8 +95,10 @@
 			<button class="block btn" id="val">Change the alt now!</button>
 		</div><!--  end of val section -->
 		<div class="section">
-			<h1>Toggle</h1>
+			<h1>Toggle, Hide, Show</h1>
 			<button id="toggle" class="btn block">TOGGLE</button>
+			<button id="hide" class="btn block">Hide</button>
+			<button id="show" class="btn block">Show</button>
 			<img id="toggle_dog" src="img/labradoodle.jpg">
 		</div><!-- end of toggle() sectin -->
 	</div><!-- end of container -->
