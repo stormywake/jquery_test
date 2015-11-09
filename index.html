@@ -24,6 +24,13 @@
 		    $('#before').click(function(){
 		    	$('#img_before').before('<p>Like i told you!</p>');
 		    });
+		    $('#html').click(function(){
+		    	$("h1").html("<h1>You just changed everything!</h1>");
+		    });
+		    $('#text').click(function(){
+		    	var p= $('p').text();
+		    	$('#text_here').html(p);
+		    });
 		});
 	</script>
 	<title>My Basic Jquery Assignment</title>
@@ -51,12 +58,22 @@
 			<img id="dog" src="img/labradoodle.jpg" alt="before">
 			<button class="block" id="alt">Change the alt</button>
 		</div><!-- end of attr -->
-		<div>
+		<div class="section">
 			<h1>Before</h1>
 			<img id="img_before" src="img/labradoodle.jpg">
 			<p>Click the button to add a paragraph before the image</p>
 			<button class="block" id="before">Add paragraph now!</button>
 		</div> <!-- end of before -->
+		<div class="section">
+			<h1>HTML</h1>
+			<p>Click the button to change the html of all the H1 tags</p>
+			<button class="block" id="html">Change the H1 tags</button>
+		</div><!--  end of html section -->
+		<div class="section">
+			<h1>Text</h1>
+			<p id="text_here">press the button to get all the p tags in one paragraph</p>
+			<button class="block" id="text">Get all the P tags!</button>
+		</div><!--  end of text section -->
 	</div><!-- end of container -->
 
 </body>
