@@ -44,6 +44,15 @@
 		    $('#show').click(function(){
 		    	$('#toggle_dog').show();
 		    });
+		    $('#slide_up').click(function(){
+		    	$('#toggle_dog').slideUp("slow");
+		    });
+		    $('#slide_down').click(function(){
+		    	$('#toggle_dog').slideDown("slow");
+		    });
+		    $('#slide_toggle').click(function(){
+		    	$('#toggle_dog').slideToggle("slow");
+		    });
 		});
 	</script>
 	<title>My Basic Jquery Assignment</title>
@@ -94,11 +103,16 @@
 			<input class="block" id="dog_text" type="texarea" placeholder="insert here">
 			<button class="block btn" id="val">Change the alt now!</button>
 		</div><!--  end of val section -->
-		<div class="section">
-			<h1>Toggle, Hide, Show</h1>
-			<button id="toggle" class="btn block">TOGGLE</button>
-			<button id="hide" class="btn block">Hide</button>
-			<button id="show" class="btn block">Show</button>
+		<div class="section fixed_height">
+			<h1>Toggle, Hide, Show, Slide</h1>
+			<ul class=" block inline">
+				<li><button id="toggle" class="btn">TOGGLE</button></li>
+				<li><button id="hide" class="btn">Hide</button></li>
+				<li><button id="show" class="btn">Show</button></li>
+				<li><button id="slide_up" class="btn">Slide up</button></li>
+				<li><button id="slide_down" class="btn">Slide down</button></li>
+				<li><button id="slide_toggle" class="btn">Slide toggle</button></li>
+			</ul>
 			<img id="toggle_dog" src="img/labradoodle.jpg">
 		</div><!-- end of toggle() sectin -->
 	</div><!-- end of container -->

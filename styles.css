@@ -34,3 +34,9 @@
 	color: blue;
 	font-style: italic;
 }
+.inline li{
+	display: inline-block;
+}
+.fixed_height{
+	height: 500px;
+}
