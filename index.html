@@ -53,6 +53,12 @@
 		    $('#slide_toggle').click(function(){
 		    	$('#toggle_dog').slideToggle("slow");
 		    });
+		    $('#fadein').click(function(){
+		    	$('#toggle_dog').fadeIn("slow");
+		    });
+		    $('#fadeout').click(function(){
+		    	$('#toggle_dog').fadeOut("slow");
+		    });
 		});
 	</script>
 	<title>My Basic Jquery Assignment</title>
@@ -112,6 +118,9 @@
 				<li><button id="slide_up" class="btn">Slide up</button></li>
 				<li><button id="slide_down" class="btn">Slide down</button></li>
 				<li><button id="slide_toggle" class="btn">Slide toggle</button></li>
+				<li><button id="fadein" class="btn">Fade In</button></li>
+				<li><button id="fadeout" class="btn">Fade Out</button></li>
+
 			</ul>
 			<img id="toggle_dog" src="img/labradoodle.jpg">
 		</div><!-- end of toggle() sectin -->
