@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+		    $('#add_class').click(function(){
+		    	$('#red').addClass('red');
+		    });
+
+		    $('#after').click(function(){
+		    	$('#add_after').after('<p class="inline red"> "this is after"</p>')
+		    });
+		});
+	</script>
+	<title>My Basic Jquery Assignment</title>
+</head>
+<body>
+	<div id="container">
+		<div class="section">
+			<h1>Add Class</h1>
+			<button class="inline btn" id="add_class">Add Class</button>
+			<p class="inline" id="red"> Click the button to add class 'red' to this paragrah</p>
+		</div><!--  end of "add" class -->
+		<div class="section">
+			<h1>After</h1>
+			<button class="inline btn" id="after">Add</button>
+			<p class="inline" id="add_after"> Click button to insert text after paragraph</p>
+		</div> <!-- end of "after" section -->
+	</div><!-- end of container -->
+
+</body>
+</html>
