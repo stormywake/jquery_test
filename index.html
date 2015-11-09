@@ -18,6 +18,9 @@
 		    $('#append').click(function(){
 		    	$('#append_this').append(' <span class="red">"this text is inside the current p tag"</span');
 		    });
+		    $('#alt').click(function(){
+		    	$('#dog').attr('alt',"Stella is the best dog");
+		    });
 		});
 	</script>
 	<title>My Basic Jquery Assignment</title>
@@ -39,6 +42,12 @@
 			<button class="inline btn" id="append">Append</button>
 			<p class="inline" id="append_this">Click button to append text to the end of the paragraph</p>
 		</div> <!-- end of "append" section -->
+		<div class="section">
+			<h1>Attr</h1>
+			<p>click the button to change the alt tag of the image.</p>
+			<img id="dog" src="img/labradoodle.jpg" alt="before">
+			<button class="block" id="alt">Change the alt</button>
+		</div><!-- end of attr -->
 	</div><!-- end of container -->
 
 </body>
