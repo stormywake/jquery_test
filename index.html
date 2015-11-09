@@ -12,7 +12,11 @@
 		    });
 
 		    $('#after').click(function(){
-		    	$('#add_after').after('<p class="inline red"> "this is after"</p>')
+		    	$('#add_after').after('<p class="inline red"> "this text is in its own p tag after the previous p tags"</p>')
+		    });
+
+		    $('#append').click(function(){
+		    	$('#append_this').append(' <span class="red">"this text is inside the current p tag"</span');
 		    });
 		});
 	</script>
@@ -30,6 +34,11 @@
 			<button class="inline btn" id="after">Add</button>
 			<p class="inline" id="add_after"> Click button to insert text after paragraph</p>
 		</div> <!-- end of "after" section -->
+		<div class="section">
+			<h1>Append</h1>
+			<button class="inline btn" id="append">Append</button>
+			<p class="inline" id="append_this">Click button to append text to the end of the paragraph</p>
+		</div> <!-- end of "append" section -->
 	</div><!-- end of container -->
 
 </body>

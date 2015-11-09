@@ -4,10 +4,10 @@
 }
 #container{
 	background-color: white;
-	width: 600px;
+	width: 800px;
 	margin: 0px auto;
-	padding: 20px;
 	text-align: center;
+	border: 1px solid black;
 }
 .inline{
 	display: inline-block;
@@ -21,6 +21,7 @@
 	color: red;
 }
 .section{
+	padding-top: 20px;
 	padding-bottom: 20px;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 }
