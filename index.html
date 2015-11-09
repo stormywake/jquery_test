@@ -31,6 +31,10 @@
 		    	var p= $('p').text();
 		    	$('#text_here').html(p);
 		    });
+		    $('#val').click(function(){
+		    	var text= $('#dog_text').val();
+		    	$('#alt_dog').attr('alt',text);
+		    });
 		});
 	</script>
 	<title>My Basic Jquery Assignment</title>
@@ -56,24 +60,31 @@
 			<h1>Attr</h1>
 			<p>click the button to change the alt tag of the image.</p>
 			<img id="dog" src="img/labradoodle.jpg" alt="before">
-			<button class="block" id="alt">Change the alt</button>
+			<button class="block btn" id="alt">Change the alt</button>
 		</div><!-- end of attr -->
 		<div class="section">
 			<h1>Before</h1>
 			<img id="img_before" src="img/labradoodle.jpg">
 			<p>Click the button to add a paragraph before the image</p>
-			<button class="block" id="before">Add paragraph now!</button>
+			<button class="block btn" id="before">Add paragraph now!</button>
 		</div> <!-- end of before -->
 		<div class="section">
 			<h1>HTML</h1>
 			<p>Click the button to change the html of all the H1 tags</p>
-			<button class="block" id="html">Change the H1 tags</button>
+			<button class="block btn" id="html">Change the H1 tags</button>
 		</div><!--  end of html section -->
 		<div class="section">
 			<h1>Text</h1>
 			<p id="text_here">press the button to get all the p tags in one paragraph</p>
-			<button class="block" id="text">Get all the P tags!</button>
+			<button class="block btn" id="text">Get all the P tags!</button>
 		</div><!--  end of text section -->
+		<div class="section">
+			<h1>Val</h1>
+			<p>change the text in the text box and click submit, to change the alt of the image below!!!</p>
+			<img id="alt_dog" src="img/labradoodle.jpg" alt="maybe">
+			<input class="block" id="dog_text" type="texarea" placeholder="insert here">
+			<button class="block btn" id="val">Change the alt now!</button>
+		</div><!--  end of val section -->
 	</div><!-- end of container -->
 
 </body>
